@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "/Health_Tracker_Assignment": {},
+    "/Health_Tracker_Assignment/add-user-workout": {},
+    "/Health_Tracker_Assignment/chartwise-rep": {},
+    "/Health_Tracker_Assignment/user-workouts": {}
+  }
+}
