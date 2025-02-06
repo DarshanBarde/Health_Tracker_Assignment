@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-list {
+    width: 20%;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.chart-container {
+    width: 80%;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+li:hover {
+    color: #007bff;
+}

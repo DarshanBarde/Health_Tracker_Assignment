@@ -1,0 +1,115 @@
+/* Center the form vertically and horizontally */
+.vh-100 {
+    height: 100vh;
+}
+
+/* Card styling with larger width */
+.card {
+    max-width: 600px;
+    /* Increase the width of the form */
+    width: 90%;
+    /* Responsive for smaller screens */
+    border-radius: 15px;
+    background: #f8f9fa;
+    /* Light background */
+}
+
+/* Form inputs */
+.form-control-lg {
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Button styling */
+.btn-lg {
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+/* Title */
+h2 {
+    font-size: 32px;
+    /* Enlarge the title */
+    font-weight: bold;
+}
+
+/* Adjust card height on smaller screens */
+@media (max-width: 768px) {
+    .card {
+        padding: 40px;
+    }
+}
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.form-container {
+    max-width: 450px;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.input-custom:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.6);
+}
+
+.btn-hover {
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+
+/* Ensure proper spacing between label and input */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    /* Adds spacing between fields */
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    /* Adds space between label and input */
+}
+
+.input-custom {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #bb8fea;
+    padding: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-custom:focus {
+    border-color: #a2c1f7;
+    box-shadow: 0 0 8px rgba(134, 172, 237, 0.6);
+}
+
+/* Button Styling */
+.btn-hover {
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}

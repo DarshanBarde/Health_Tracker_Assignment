@@ -1,0 +1,35 @@
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light">
+  <div class="card shadow-lg p-5 form-container">
+    <h2 class="text-center mb-4 text-primary">Add User Workout</h2>
+
+    <form class="form-style">
+      <div class="form-group">
+        <label class="form-label">Username</label>
+        <input type="text" class="form-control form-control-lg input-custom" 
+               [(ngModel)]="userName" [ngModelOptions]="{standalone: true}" 
+               placeholder="Enter Name" required />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Workout Type</label>
+        <select class="form-control form-control-lg input-custom" 
+                [(ngModel)]="workoutType" [ngModelOptions]="{standalone: true}" required>
+          <option value="" disabled selected>Select Workout Type</option>
+          <option *ngFor="let type of workoutTypes" [value]="type">{{ type }}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Workout Minutes</label>
+        <input type="number" class="form-control form-control-lg input-custom" 
+               [(ngModel)]="workoutMinutes" [ngModelOptions]="{standalone: true}" 
+               placeholder="Minutes" required />
+      </div>
+
+      <div class="d-grid gap-2 mt-4">
+        <button type="button" class="btn btn-success btn-lg btn-hover" 
+                (click)="saveWorkout()">Save Workout</button>
+      </div>
+    </form>
+  </div>
+</div>

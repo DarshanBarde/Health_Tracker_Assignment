@@ -1,0 +1,13 @@
+<div *ngIf="usernames.length > 0">
+  <h3>Select a User:</h3>
+  <ul>
+    <li *ngFor="let user of usernames" (click)="loadChartData(user)" style="cursor: pointer; color: blue;">
+      {{ user }}
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="selectedUser" style="width: 400px; height: 300px; margin: auto;">
+  <h3>Workout Chart for {{ selectedUser }}</h3>
+  <canvas #chartCanvas></canvas>
+</div>

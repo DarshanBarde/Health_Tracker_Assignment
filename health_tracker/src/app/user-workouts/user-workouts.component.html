@@ -1,0 +1,41 @@
+<div class="workout-list">
+  <h2>User Workouts</h2>
+
+  <!-- Filters -->
+  <div class="filters">
+    <label for="nameFilter">Filter by Name:</label>
+    <input id="nameFilter" [(ngModel)]="filterName" placeholder="Enter name" />
+
+    <label for="typeFilter">Filter by Workout Type:</label>
+    <input id="typeFilter" [(ngModel)]="filterType" placeholder="Enter workout type" />
+  </div>
+
+  <!-- Table -->
+  <div class="table-container">
+    <table class="workout-table">
+      <thead>
+        <tr>
+          <th>User Name</th>
+          <th>Workout Type</th>
+          <th>Workout Minutes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let workout of pagedWorkouts">
+          <td>{{ workout.userName }}</td>
+          <td>{{ workout.workoutType }}</td>
+          <td>{{ workout.workoutMinutes }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Pagination Controls -->
+  <div class="pagination">
+    <button (click)="goToPage(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+    <span>Page {{ currentPage }} of {{ totalPages }}</span>
+    <button (click)="goToPage(currentPage + 1)" [disabled]="currentPage === totalPages">Next</button>
+  </div>
+
+  <button (click)="clearWorkouts()">Clear Workouts</button>
+</div>
