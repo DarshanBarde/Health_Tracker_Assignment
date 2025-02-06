@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common'; // ✅ Import CommonModule for *ngFor
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-add-user-workout',
   standalone: true,
-  imports: [FormsModule, CommonModule], // ✅ Add CommonModule here
+  imports: [FormsModule, CommonModule], 
   templateUrl: './add-user-workout.component.html',
   styleUrl: './add-user-workout.component.scss'
 })
